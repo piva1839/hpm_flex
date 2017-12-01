@@ -10,6 +10,15 @@ $(document).ready(function(){
     dots: true,
     dotsClass: "my-dots",
   });
+  
+  var headerheight = $(".main-header").height();
+  var addressbarheight = $(".address-bar").height();
+  var totalheight = headerheight + addressbarheight;
+  var mainsliderimgheight = $(window).height() - totalheight+"px";
+  $(".main-slider__img").css("height",mainsliderimgheight);
+  $(window).resize(function(){
+    location.reload();
+  });
 	
 	$(".more-menu-items").click(function(event) {
 		event.preventDefault();
