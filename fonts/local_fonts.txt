@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption');
+
+or
+
+@font-face {
+	font-family: "PT Sans Caption";
+	src: url("../fonts/PT Sans Caption.ttf") format("truetype");
+	src: local("PT Sans Caption"), url(../fonts/PT Sans Caption.ttf);
+}
+
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'PT Sans', sans-serif;
