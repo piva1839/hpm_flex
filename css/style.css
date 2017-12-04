@@ -64,6 +64,54 @@ img {
 	color: #db001b;
 }
 
+/* mobile menu */
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+  display: none;
+  width: 100%;
+  height: 100%;
+  
+  text-align: center;
+  
+  background: #2b2b2b;
+}
+
+.mobile-menu__item__link {
+  display: block;
+  padding: 10px;
+  
+  border-bottom: 2px solid #232323;
+  
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #eeeeee;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  transition: 0.2s;
+}
+
+.mobile-menu__item__link:hover {
+  background: #333333;
+  
+  color: #db001b;
+}
+
+/* burger */
+
+.burger-icon {
+  margin-top: 3px;
+  
+  cursor: pointer;
+}
+
 .address-bar {
   padding: 15px 0;
   
@@ -362,12 +410,10 @@ img {
 }
 
 .main-projects__item {
-	position: relative;
+  position: relative;
 }
 
 .main-projects__item__img {
-	position: relative;
-	
 	width: 100%;
 	height: auto;
 	
@@ -375,43 +421,57 @@ img {
 	outline: 0;
 }
 
-.main-projects__item__img::before { 
-	content: "";
+.main-projects__item__effect {
   position: absolute;
-	top: 0;
-	left: 0;
-	
-	display: block;
-	width: 100%;
-	height: auto;
-	
-	background: #000000;
-	opacity: 50%;
+  top: 0;
+  left: 0;
+  
+  display: none;
+  width: 100%;
+  height: 100%;
+  
+  background: #000000;
+  opacity: 0.6;
 }
 
-.main-projects__item__name { 
+.main-projects__item__about {
   position: absolute;
-	left: 0;
-	bottom: 0;
-	
-	display: none;
-	width: 100%;
-	height: auto;
-	
-	text-align: center;
+  bottom: 7%;
+  left: 0;
+  
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
-.main-projects__item__desc { 
-  position: absolute;
-	left: 0;
-	bottom: 0;
-	
-	display: none;
-	width: 100%;
-	height: auto;
-	
-	text-align: center;
-}  
+.main-projects__item__name {
+  margin-bottom: 5%;
+  
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-projects__item__desc {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ababab;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-projects__item:hover .main-projects__item__effect,
+.main-projects__item:hover .main-projects__item__about {
+  display: block;
+  
+  cursor: pointer;
+}
 
 .content-button-wrapper_black {
 	padding: 30px 0;
