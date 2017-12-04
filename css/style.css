@@ -115,7 +115,7 @@ img {
 }
 
 .fixed-contacts-item:hover {
-  border-right: 2px solid #db001b;
+  opacity: 0.8;
 }
 
 .fixed-contacts-item_email {
@@ -361,7 +361,13 @@ img {
 	width: calc(100% / 2);
 }
 
+.main-projects__item {
+	position: relative;
+}
+
 .main-projects__item__img {
+	position: relative;
+	
 	width: 100%;
 	height: auto;
 	
@@ -369,9 +375,43 @@ img {
 	outline: 0;
 }
 
-.main-projects__item__about {
-	display: none;
+.main-projects__item__img::before { 
+	content: "";
+  position: absolute;
+	top: 0;
+	left: 0;
+	
+	display: block;
+	width: 100%;
+	height: auto;
+	
+	background: #000000;
+	opacity: 50%;
 }
+
+.main-projects__item__name { 
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	display: none;
+	width: 100%;
+	height: auto;
+	
+	text-align: center;
+}
+
+.main-projects__item__desc { 
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	display: none;
+	width: 100%;
+	height: auto;
+	
+	text-align: center;
+}  
 
 .content-button-wrapper_black {
 	padding: 30px 0;
