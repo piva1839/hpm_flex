@@ -36,7 +36,18 @@
 								<a class="main-header__menu__item__link main-header__menu__item__link_active" href="#">Услуги</a>
 							</li>
 							<li class="main-header__menu__item">
-								<a class="main-header__menu__item__link" href="#">Компания</a>
+								<a class="main-header__menu__item__link drop-menu-marker" href="#">Компания</a>
+								<ul class="drop-menu">
+									<li class="drop-menu__item">
+										<a class="drop-menu__link" href="#">О нас</a>
+									</li>
+									<li class="drop-menu__item">
+										<a class="drop-menu__link" href="#">Сертификаты</a>
+									</li>
+									<li class="drop-menu__item">
+										<a class="drop-menu__link" href="#">Сотрудничество</a>
+									</li>
+								</ul>
 							</li>
 							<li class="main-header__menu__item">
 								<a class="main-header__menu__item__link" href="#">Проекты</a>
@@ -89,6 +100,7 @@
 				</div>
 			</div>
 		</header>
+		<!-- address bar -->
 		<div class="address-bar">
 			<div class="container">
 				<ul class="address-bar__items">
@@ -101,7 +113,23 @@
 				</ul>
 			</div>
       <a class="fixed-contacts-item fixed-contacts-item_email">Email</a>
-    <a class="fixed-contacts-item fixed-contacts-item_skype">Skype</a>
+			<a class="fixed-contacts-item fixed-contacts-item_skype">Skype</a>
+		</div>
+		<!-- popup feedback -->
+		<div class="popup-overlay">
+		</div>
+		<div class="popup-feedback">
+			<form class="popup-feedback__feedback-form" name="form" method="post">
+				<input class="popup-feedback__feedback-form__input" type="text" placeholder="Имя">
+				<input class="popup-feedback__feedback-form__input" type="email" placeholder="Email">
+				<textarea class="popup-feedback__feedback-form__textarea" placeholder="Сообщение"></textarea>
+        <button class="popup-feedback__feedback-form__button" type="submit">
+					Отправить
+        </button>	
+			</form>
+			<button class="close-modal-block" type="button">
+				Закрыть
+			</button>
 		</div>
 		
 		
@@ -372,7 +400,7 @@
             <div class="main-footer__menu">
               <ul class="main-footer__menu__items">
                 <li class="main-footer__menu__item">
-                  <a class="main-footer__menu__item__link main-footer__menu__item__link_active" href="#">Услуги</a>
+                  <a class="main-footer__menu__item__link" href="#">Услуги</a>
                 </li>
                 <li class="main-footer__menu__item">
                   <a class="main-footer__menu__item__link" href="#">Компания</a>
