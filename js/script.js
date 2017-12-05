@@ -4,6 +4,15 @@ $(document).ready(function(){
     dotsClass: "my-dots",
   });
   
+  $(window).scroll(function() {
+    if ($(this).scrollTop()) {
+      $(".main-header").addClass("main-header_fixed");
+    }
+    else {
+      $(".main-header").removeClass("main-header_fixed");
+    }
+  });
+  
   var headerheight = $(".main-header").height();
   var addressbarheight = $(".address-bar").height();
   var totalheight = headerheight + addressbarheight;
