@@ -142,6 +142,16 @@ img {
 	}
 }
 
+@media screen and (max-width: 736px) and (orientation: landscape) {
+	.main-slider__title {
+		margin-top: 160px;
+		margin-bottom: 25px;
+		
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
 /* header */
 
 .main-header {
