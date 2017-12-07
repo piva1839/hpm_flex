@@ -669,7 +669,7 @@ img {
 	background: #2b2b2b;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 786px) {
 	.main-projects__left-side,
 	.main-projects__right-side {
 		float: none;
